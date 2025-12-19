@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | APAZ Construction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/APAZ Logo.png">
+    <style>
+        .page-header {
+            height: 40vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/IMG_20190530_161755 - Almas Kenges.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+        }
+
+        .contact-info-box {
+            background: var(--bg-dark);
+            color: white;
+            padding: 50px;
+            border-radius: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/APAZ Logo.png" alt="APAZ Construction Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact" class="active">Contact</a></li>
+            </ul>
+            <a href="contact" class="btn btn-primary">Get a Quote</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="reveal">Get In Touch</h1>
+            <p class="reveal">Let's discuss your next project</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info-box reveal">
+                    <h2 style="margin-bottom: 30px;">Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>925-290-5661</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>apaz.construction@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Livermore, CA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Mon - Fri: 8:00 AM - 7:00 PM<br>Sat - Sun: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h2 style="margin-bottom: 30px;">Request a Quote</h2>
+                    <form id="contact-form" action="https://formsubmit.co/ajax/apaz.construction@gmail.com"
+                        method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Type</label>
+                            <select name="service">
+                                <option>Kitchen Remodel</option>
+                                <option>Bathroom Remodel</option>
+                                <option>Tile Installation</option>
+                                <option>Full Home Renovation</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <div class="captcha-container">
+                            <label class="captcha-label">Tile Master Verification: Drag the tile to the mortar</label>
+                            <div class="tile-grid">
+                                <div class="tile-slot"></div>
+                                <div class="tile-slot"></div>
+                                <div class="tile-slot"></div>
+                                <div class="tile-slot empty" id="drop-zone"></div>
+                            </div>
+                            <div class="tile-source-container">
+                                <div class="draggable-tile" id="tile-to-drag" draggable="true">
+                                </div>
+                            </div>
+                            <div class="captcha-success" id="captcha-success">
+                                <i class="fas fa-check-circle"></i> Verification Complete!
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;" disabled>Send
+                            Message</button>
+                        <div id="form-status"
+                            style="margin-top: 20px; text-align: center; display: none; padding: 15px; border-radius: 4px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map reveal" style="height: 400px; background: #eee; position: relative;">
+        <!-- In a real scenario, use Google Maps Embed API here -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <i class="fas fa-map-location-dot"
+                style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 15px;"></i>
+            <h3>Proudly Serving Livermore & Surrounding Areas</h3>
+            <p>California, USA</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="assets/APAZ Logo.png" alt="APAZ Logo">
+                    </div>
+                    <p>Premium home remodeling and tile expertise in Livermore, CA. Built on quality and customer
+                        satisfaction.</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:925-290-5661"><i class="fas fa-phone text-gold"></i> 925-290-5661</a></li>
+                        <li><a href="mailto:apaz.construction@gmail.com"><i class="fas fa-envelope text-gold"></i>
+                                apaz.construction@gmail.com</a></li>
+                        <li><i class="fas fa-location-dot text-gold"></i> Livermore, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 APAZ Construction inc. All rights reserved. Designed with Quality.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
