@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | APAZ Construction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/APAZ Logo.png">
+    <style>
+        .page-header {
+            height: 40vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('assets/IMG_20190524_160909 - Almas Kenges.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            display: flex;
+            margin-bottom: 60px;
+        }
+
+        .service-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-image {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .service-content {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 992px) {
+
+            .service-card,
+            .service-card:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/APAZ Logo.png" alt="APAZ Construction Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="services" class="active">Services</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="contact" class="btn btn-primary">Get a Quote</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="reveal">Our Services</h1>
+            <p class="reveal">Expert craftsmanship for modern living</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <div class="service-card reveal">
+                <div class="service-image">
+                    <img src="assets/IMG_20190524_160938 - Almas Kenges.jpg" alt="Master Tile Work"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <span class="text-gold"
+                        style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Expertise</span>
+                    <h2 style="margin-bottom: 20px;">Master Tile Installation</h2>
+                    <p style="margin-bottom: 25px;">Tile is at the heart of what we do. From intricate bathroom floors
+                        to large-format kitchen backsplashes, we handle every detail with precision. We are experts in
+                        handling "difficult" jobs that require high technical skill and specialized tools.</p>
+                    <ul style="margin-bottom: 30px;">
+                        <li><i class="fas fa-check text-gold"></i> Large Format Tiles</li>
+                        <li><i class="fas fa-check text-gold"></i> Natural Stone & Marble</li>
+                        <li><i class="fas fa-check text-gold"></i> Mosaic & Pattern Work</li>
+                        <li><i class="fas fa-check text-gold"></i> Waterproofing Systems</li>
+                    </ul>
+                    <a href="contact" class="btn btn-outline" style="width: fit-content;">Consult for Tile</a>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-image">
+                    <img src="assets/IMG_20190524_160948 - Almas Kenges.jpg" alt="Kitchen & Bath Remodeling"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <span class="text-gold"
+                        style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Transformation</span>
+                    <h2 style="margin-bottom: 20px;">Kitchen & Bath Remodeling</h2>
+                    <p style="margin-bottom: 25px;">Your kitchen and bathroom are the most important rooms in your home.
+                        We specialize in modern, sleek transformations that combine beauty with functionality. We manage
+                        everything from demolition to the final coat of paint.</p>
+                    <ul style="margin-bottom: 30px;">
+                        <li><i class="fas fa-check text-gold"></i> Custom Cabinetry</li>
+                        <li><i class="fas fa-check text-gold"></i> Lighting & Plumbing Fixtures</li>
+                        <li><i class="fas fa-check text-gold"></i> Countertop Installation</li>
+                        <li><i class="fas fa-check text-gold"></i> Layout Reconfiguration</li>
+                    </ul>
+                    <a href="contact" class="btn btn-outline" style="width: fit-content;">Start Your Remodel</a>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-image">
+                    <img src="assets/IMG_20190530_161755 - Almas Kenges.jpg" alt="Home Renovation"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <span class="text-gold"
+                        style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Legacy</span>
+                    <h2 style="margin-bottom: 20px;">Full Home Renovations</h2>
+                    <p style="margin-bottom: 25px;">Whether you've just bought a "fixer-upper" or your long-time home
+                        needs a complete refresh, we have the experience to handle full-scale renovations. We work with
+                        architects and designers to ensure structural integrity and aesthetic harmony.</p>
+                    <ul style="margin-bottom: 30px;">
+                        <li><i class="fas fa-check text-gold"></i> Open Concept Living Areas</li>
+                        <li><i class="fas fa-check text-gold"></i> Flooring & Baseboards</li>
+                        <li><i class="fas fa-check text-gold"></i> Structural Modifications</li>
+                        <li><i class="fas fa-check text-gold"></i> Project Management</li>
+                    </ul>
+                    <a href="contact" class="btn btn-outline" style="width: fit-content;">Request a Proposal</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="assets/APAZ Logo.png" alt="APAZ Logo">
+                    </div>
+                    <p>Premium home remodeling and tile expertise in Livermore, CA. Built on quality and customer
+                        satisfaction.</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:925-290-5661"><i class="fas fa-phone text-gold"></i> 925-290-5661</a></li>
+                        <li><a href="mailto:apaz.construction@gmail.com"><i class="fas fa-envelope text-gold"></i>
+                                apaz.construction@gmail.com</a></li>
+                        <li><i class="fas fa-location-dot text-gold"></i> Livermore, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 APAZ Construction inc. All rights reserved. Designed with Quality.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
